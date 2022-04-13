@@ -31,3 +31,6 @@ Data from
 https://www.kaggle.com/datasets/tedisetiady/leaf-rice-disease-indonesia
 
 TEDI SETIADY Southeast Sulawesi, Indonesia.
+
+Link to experiment
+https://wandb.ai/dnth/leaf-disease-blogpost?workspace=user-dnth
