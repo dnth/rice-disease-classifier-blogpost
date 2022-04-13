@@ -1,0 +1,151 @@
+wandb_version: 1
+
+Learner:
+  desc: null
+  value:
+    _name: <fastai.learner.Learner object at 0x7f4855d95550>
+    loss_func:
+      _name:
+        _name: FlattenedLoss of LabelSmoothingCrossEntropy()
+        eps: 0.1
+        reduction: mean
+        weight: null
+      eps: 0.1
+      reduction: mean
+      weight: null
+    lr: 0.001
+    metrics: fastai.metrics.accuracy
+    model_dir: models
+    moms:
+    - 0.95
+    - 0.85
+    - 0.95
+    opt_func: fastai.optimizer.Adam
+    path: .
+    splitter: fastai.torch_core.trainable_params
+    train_bn: true
+    wd: null
+    wd_bn_bias: false
+ParamScheduler:
+  desc: null
+  value: true
+ProgressCallback:
+  desc: null
+  value: true
+Recorder:
+  desc: null
+  value:
+    add_time: true
+    train_metrics: false
+    valid_metrics: true
+SaveModelCallback:
+  desc: null
+  value:
+    at_end: false
+    every_epoch: false
+    fname: model
+    with_opt: false
+ShowGraphCallback:
+  desc: null
+  value: true
+TrainEvalCallback:
+  desc: null
+  value: true
+WandbCallback:
+  desc: null
+  value:
+    dataset_name: null
+    log: gradients
+    log_dataset: false
+    log_model: true
+    log_preds: false
+    n_preds: 36
+    reorder: true
+    seed: 12345
+    valid_dl: null
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.14
+    framework: fastai
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.8.13
+    start_time: 1649849523
+    t:
+      1:
+      - 1
+      - 4
+      - 5
+      - 33
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 4
+      - 5
+      - 33
+      - 41
+      - 53
+      - 55
+      3:
+      - 2
+      - 13
+      4: 3.8.13
+      5: 0.12.14
+      8:
+      - 1
+      - 5
+batch per epoch:
+  desc: null
+  value: 24
+batch size:
+  desc: null
+  value: 8
+dataset.tfms:
+  desc: null
+  value: '[Pipeline: PILBase.create, Pipeline: parent_label -> Categorize -- {''vocab'':
+    None, ''sort'': True, ''add_na'': False}]'
+device:
+  desc: null
+  value: cuda
+dls.after_batch:
+  desc: null
+  value: 'Pipeline: IntToFloatTensor -- {''div'': 255.0, ''div_mask'': 1} -> Flip
+    -- {''size'': None, ''mode'': ''bilinear'', ''pad_mode'': ''reflection'', ''mode_mask'':
+    ''nearest'', ''align_corners'': True, ''p'': 0.5} -> RandomResizedCropGPU -- {''size'':
+    (384, 384), ''min_scale'': 0.75, ''ratio'': (1, 1), ''mode'': ''bilinear'', ''valid_scale'':
+    1.0, ''max_scale'': 1.0, ''p'': 1.0} -> Brightness -- {''max_lighting'': 0.30000000000000004,
+    ''p'': 1.0, ''draw'': None, ''batch'': False}'
+dls.after_item:
+  desc: null
+  value: 'Pipeline: Resize -- {''size'': (384, 384), ''method'': ''crop'', ''pad_mode'':
+    ''reflection'', ''resamples'': (<Resampling.BILINEAR: 2>, 0), ''p'': 1.0} -> ToTensor'
+dls.before_batch:
+  desc: null
+  value: 'Pipeline: '
+frozen:
+  desc: null
+  value: false
+frozen idx:
+  desc: null
+  value: 0
+input 1 dim 1:
+  desc: null
+  value: 8
+input 1 dim 2:
+  desc: null
+  value: 3
+input 1 dim 3:
+  desc: null
+  value: 384
+input 1 dim 4:
+  desc: null
+  value: 384
+model parameters:
+  desc: null
+  value: 1934003
+n_inp:
+  desc: null
+  value: 1
