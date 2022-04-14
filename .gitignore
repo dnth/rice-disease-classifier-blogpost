@@ -6,6 +6,10 @@
 # aten/build/ will stop being cleaned.  So be careful when
 # refactoring this file!
 
+## Wandb
+wandb
+wandb-debug.log
+
 ## PyTorch
 *.pth
 *.pkl
